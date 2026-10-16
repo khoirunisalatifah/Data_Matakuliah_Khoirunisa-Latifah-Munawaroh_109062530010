@@ -2,11 +2,11 @@
 <?php
 require '../config/database.php';
 require '../app/models/MataKuliah.php';
-require '../app/controllers/MataKuliahController.php';
+require '../app/controllers/MataKuliahControllers.php';
 
 $db = (new Database())->connect();
 $model = new MataKuliah($db);
-$controller = new MataKuliahController($model);
+$controller = new MataKuliahControllers($model);
 
 $page = $_GET['page'] ?? 'mata_kuliah';
 $action = $_GET['action'] ?? 'index';
