@@ -12,11 +12,11 @@
 
         <label>Kode Mata Kuliah</label><br>
         <input type="text" name="kode"
-        value="<?= htmlspecialchars($mata_kuliah['kode']) ?>" required><br><br>
+        value="<?= htmlspecialchars((string)$mata_kuliah['kode_mk']) ?>" required><br><br>
 
         <label>Nama Mata Kuliah</label><br>
         <input type="text" name="nama"
-        value="<?= htmlspecialchars($mata_kuliah['nama']) ?>" required><br><br>
+        value="<?= htmlspecialchars((string)$mata_kuliah['nama_mk']) ?>" required><br><br>
 
         <label>SKS</label><br>
         <input type="number" name="sks"
